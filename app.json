@@ -1,0 +1,12 @@
+{
+  "name": "yuka",
+  "displayName": "yuka",
+  "expo": {
+    "name": "yuka",
+    "slug": "yuka",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
