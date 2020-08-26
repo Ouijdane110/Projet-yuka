@@ -1,21 +1,51 @@
-import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { NavigationContainer } from '@react-navigation/native';
+import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
+import colors from './src/utils/color';
+import Historique from './src/components/Icon/historique';
+import CodeBar from './src/components/Icon/codebar';
+import Hearth from './src/components/Icon/hearth';
+import roadMap from './src/router';
 
-export default function App() {
-  return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
-  );
+const gestionIconTab = name => {
+  switch(name){
+    case 'Historique':
+      return <Historique color={colors.iconTab} width={40} height={40} />
+    case 'BarCode':
+      return <CodeBar color={colors.iconTab} width={40} height={40} />
+    case 'Favoris':
+      return <Hearth color={colors.iconTab} width={40} height={40} />
+  }
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+const Tab = createBottomTabNavigator();
+
+const App = () => <>
+  <NavigationContainer>
+    <Tab.Navigator
+        tabBarOptions={{
+          style: {
+            height: 75,
+          },
+          tabStyle: {
+            height: 75,
+            backgroundColor: colors.white,
+          },
+        }}
+    >
+      { 
+        roadMap.map((prop,key) => prop.inTab && <Tab.Screen 
+          name={prop.name} 
+          component={prop.component} 
+          options={{
+            tabBarLabel: '',
+            tabBarIcon: () => gestionIconTab(prop.name),
+          }}
+          key={key}
+        />)
+      }
+    </Tab.Navigator>
+  </NavigationContainer>
+</>
+
+export default App;
