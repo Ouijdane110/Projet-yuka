@@ -43,7 +43,7 @@ const App = () => {
         { 
           roadMap.map((prop,key) => prop.inTab 
             ? <Tab.Screen name={prop.name} component={prop.component} options={{ tabBarLabel: '', tabBarIcon: () => gestionIconTab(prop.name)}} key={key} />
-            : <Tab.Screen name={prop.name} component={prop.component} options={{ }} />
+            : <Tab.Screen name={prop.name} component={prop.component} options={{}} />
           )
         }
       </Tab.Navigator>
