@@ -1,8 +1,8 @@
 import React from 'react';
 import { Text, View } from 'react-native';
-import screensView from '../../utils/globalStyle';
+import globalStyle from '../../utils/globalStyle';
 
-const FavorisScreen = () => <View style={screensView}>
+const FavorisScreen = () => <View style={globalStyle.screensView}>
     <Text>Vos articles favoris</Text>
 </View>
 
