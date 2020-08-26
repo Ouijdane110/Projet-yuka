@@ -1,5 +1,4 @@
 import React from 'react';
-import { Alert } from 'react-native';
 import SvG, { Path, G } from 'react-native-svg';
 
 const CodeBar = ({ color, height, width }) => {
@@ -12,7 +11,6 @@ const CodeBar = ({ color, height, width }) => {
       >
         <G id="prefix__XMLID_217_">
           <G id="prefix__XMLID_298_">
-            <Path id="prefix__XMLID_42_" fill="#fff" d="M2 1.8h15.4v15.4H2z" />
             <Path
               id="prefix__XMLID_39_"
               fill={color}
