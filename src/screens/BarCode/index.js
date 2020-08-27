@@ -20,14 +20,12 @@ const BarCodeScreen = ({ navigation }) => {
     fetch(`https://world.openfoodfacts.org/api/v0/product/${data}.json`)
         .then(res => res.json())
         .then(result => {
-            console.log(result)
             navigation.navigate('DetailsBarCode', {
                 screen: 'DetailsBarCodeScreen',
                 params: { data: result },
             });
             
         })
-    //alert(`TYPE: ${type} |||| DATA: ${data}`);
   };
 
   if (hasPermission === null) {

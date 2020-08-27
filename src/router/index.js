@@ -1,4 +1,3 @@
-  
 import BarCodeScreen from '../screens/BarCode';
 import ErrorScreen from '../screens/Error';
 import FavorisScreen from '../screens/Favoris';
@@ -9,7 +8,6 @@ import DetailsBarCodeScreen from '../screens/DetailsBarCode';
 import CodeBar from '../components/Icon/codebar';
 import Hearth from '../components/Icon/hearth';
 import Historique from '../components/Icon/historique';
-
 
 const roadMap = [
     { name: 'Historique', component: HistoriqueScreen, inTab: true, icon: Historique },

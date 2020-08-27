@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import { View } from 'react-native';
 // import SplashScreen from 'react-native-splash-screen';
 import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
@@ -36,16 +37,18 @@ const App = () => {
             },
             tabStyle: {
               height: 75,
+              marginRight: 70,
+              marginLeft: 70,
               backgroundColor: colors.white,
             },
           }}
       >
-        { 
-          roadMap.map((prop,key) => prop.inTab 
-            ? <Tab.Screen name={prop.name} component={prop.component} options={{ tabBarLabel: '', tabBarIcon: () => gestionIconTab(prop.name)}} key={key} />
-            : <Tab.Screen name={prop.name} component={prop.component} options={{}} />
-          )
-        }
+          { 
+            roadMap.map((prop,key) => prop.inTab 
+              ? <Tab.Screen name={prop.name} component={prop.component} options={{ tabBarLabel: '', tabBarIcon: () => gestionIconTab(prop.name)}} key={key} />
+              : <Tab.Screen name={prop.name} component={prop.component} options={{ tabBarLabel: '', tabBarVisible: false }} key={key} />
+            )
+          }
       </Tab.Navigator>
     </NavigationContainer>
   </>
