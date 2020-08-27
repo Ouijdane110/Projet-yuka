@@ -3,7 +3,7 @@ const colors = {
     blue: '#1828AF',
     pink: '#FF53BF',
     lightPink: '#FFDAEC',
-    beige: '#FEBA79',
+    beige: '#FFE1BA',
 }
 
 export default colors;

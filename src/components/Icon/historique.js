@@ -1,5 +1,4 @@
 import React from 'react';
-import { Alert } from 'react-native';
 import Svg, { Path, G } from 'react-native-svg';
 
 const Historique = ({ color, height, width }) => {

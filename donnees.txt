@@ -1,0 +1,1418 @@
+
+-------- Utilisé -------------- 
+Image : product.image_url
+Nom du produit : product.product_name": "Tropicana pure premium orange sans pulpe 100% 
+quantité du produit :product.serving_size: "100ml",
+nutrition grade : product.nutrition_grade_fr": "c",
+pays de production :product.countries": "France",
+Date d'expiration : product.expiration_date": "",
+
+Categories : product.categories: "Aliments et boissons à base de végétaux, Boissons, Boissons à base de végétaux, Jus et nectars, Boissons aux fruits, Jus de fruits, Boissons sans alcool, Jus d'orange, Jus de fruits pur jus, Jus d'orange pur jus",
+
+
+
+
+-------- Pas Utilisé ----------
+
+Ingredients : product.ingredients : [
+            {
+                "text": "Jus d'orange",
+                "percent_max": 100,
+                "id": "en:orange-juice",
+                "vegan": "yes",
+                "vegetarian": "yes",
+                "rank": 1,
+                "percent_min": 100
+            }
+        ],
+
+Ingrédients : product.ingredients_ids_debug": [
+            "jus-d-orange",
+            "sans-sucre-ajoute"
+            ],
+product.nutriscore_data": {
+            "proteins_value": 0.8,
+            "saturated_fat_ratio_points": 0,
+            "fiber": 0.6,
+            "proteins_points": 0,
+            "is_water": 0,
+            "saturated_fat_value": 0,
+            "sugars_value": 8.9,
+            "fiber_value": 0.6,
+            "sugars": 8.9,
+            "energy_value": 180,
+            "energy_points": 6,
+            "score": 2,
+            "energy": 180,
+            "saturated_fat_points": 0,
+            "negative_points": 12,
+            "grade": "c",
+            "is_fat": 0,
+            "saturated_fat": 0,
+            "saturated_fat_ratio": 0,
+            "is_cheese": 0,
+            "is_beverage": 1,
+            "sodium_points": 0,
+            "saturated_fat_ratio_value": 0,
+            "fruits_vegetables_nuts_colza_walnut_olive_oils_points": 10,
+            "positive_points": 10,
+            "fruits_vegetables_nuts_colza_walnut_olive_oils_value": 100,
+            "fiber_points": 0,
+            "sodium_value": 0,
+            "fruits_vegetables_nuts_colza_walnut_olive_oils": 100,
+            "proteins": 0.8,
+            "sugars_points": 6,
+            "sodium": 0
+        },
+Pays de vente : product.purchase_places_tags": [
+            "france"
+             ],
+product.nutrient_levels": {
+            "sugars": "high",
+            "salt": "low",
+            "saturated-fat": "low",
+            "fat": "low"
+        },
+product.brands": "Tropicana",
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// ------------------------------------ //
+
+{
+    "status_verbose": "product found",
+    "product": {
+        "nucleotides_prev_tags": [],
+        "allergens_debug_tags": [],
+        "allergens_tags": [],
+        "image_ingredients_thumb_url": "https://static.openfoodfacts.org/images/products/541/018/802/9475/ingredients_fr.120.100.jpg",
+        "data_quality_info_tags": [
+            "en:ingredients-percent-analysis-ok"
+        ],
+        "ingredients_from_palm_oil_n": 0,
+        "rev": 122,
+        "complete": 1,
+        "ingredients_n": 1,
+        "labels_lc": "fr",
+        "ingredients_hierarchy": [
+            "en:orange-juice",
+            "en:fruit",
+            "en:citrus-fruit",
+            "en:fruit-juice",
+            "en:orange"
+        ],
+        "categories_properties": {
+            "ciqual_food_code:en": "2070"
+        },
+        "allergens_from_ingredients": "",
+        "ingredients_tags": [
+            "en:orange-juice",
+            "en:fruit",
+            "en:citrus-fruit",
+            "en:fruit-juice",
+            "en:orange"
+        ],
+        "image_ingredients_small_url": "https://static.openfoodfacts.org/images/products/541/018/802/9475/ingredients_fr.120.200.jpg",
+        "languages_codes": {
+            "fr": 5
+        },
+        "additives_prev_original_tags": [],
+        "ingredients_that_may_be_from_palm_oil_tags": [],
+        "ingredients_analysis_tags": [
+            "en:palm-oil-free",
+            "en:vegan",
+            "en:vegetarian"
+        ],
+        "amino_acids_tags": [],
+        "cities_tags": [],
+        "images": {
+            "23": {
+                "sizes": {
+                    "400": {
+                        "h": 152,
+                        "w": 400
+                    },
+                    "full": {
+                        "w": 2050,
+                        "h": 781
+                    },
+                    "100": {
+                        "h": 38,
+                        "w": 100
+                    }
+                },
+                "uploaded_t": 1554391487,
+                "uploader": "kiliweb"
+            },
+            "20": {
+                "uploaded_t": 1550078133,
+                "uploader": "openfoodfacts-contributors",
+                "sizes": {
+                    "100": {
+                        "w": 75,
+                        "h": 100
+                    },
+                    "full": {
+                        "h": 4032,
+                        "w": 3024
+                    },
+                    "400": {
+                        "w": 300,
+                        "h": 400
+                    }
+                }
+            },
+            "28": {
+                "sizes": {
+                    "100": {
+                        "w": 100,
+                        "h": 72
+                    },
+                    "full": {
+                        "h": 1440,
+                        "w": 2011
+                    },
+                    "400": {
+                        "w": 400,
+                        "h": 286
+                    }
+                },
+                "uploader": "charlesnepote",
+                "uploaded_t": 1573903840
+            },
+            "15": {
+                "uploaded_t": 1537451516,
+                "uploader": "openfoodfacts-contributors",
+                "sizes": {
+                    "400": {
+                        "h": 400,
+                        "w": 300
+                    },
+                    "100": {
+                        "w": 75,
+                        "h": 100
+                    },
+                    "full": {
+                        "h": 4032,
+                        "w": 3024
+                    }
+                }
+            },
+            "26": {
+                "uploader": "openfoodfacts-contributors",
+                "uploaded_t": 1565866049,
+                "sizes": {
+                    "full": {
+                        "h": 2448,
+                        "w": 3264
+                    },
+                    "100": {
+                        "h": 75,
+                        "w": 100
+                    },
+                    "400": {
+                        "w": 400,
+                        "h": 300
+                    }
+                }
+            },
+            "16": {
+                "sizes": {
+                    "full": {
+                        "h": 3264,
+                        "w": 2448
+                    },
+                    "100": {
+                        "w": 75,
+                        "h": 100
+                    },
+                    "400": {
+                        "h": 400,
+                        "w": 300
+                    }
+                },
+                "uploaded_t": 1538816502,
+                "uploader": "openfoodfacts-contributors"
+            },
+            "front_fr": {
+                "x2": "157",
+                "white_magic": null,
+                "y2": "390",
+                "x1": "19",
+                "y1": "12",
+                "sizes": {
+                    "100": {
+                        "h": 100,
+                        "w": 37
+                    },
+                    "full": {
+                        "h": 1134,
+                        "w": 414
+                    },
+                    "400": {
+                        "h": 400,
+                        "w": 146
+                    },
+                    "200": {
+                        "w": 73,
+                        "h": 200
+                    }
+                },
+                "rev": "116",
+                "imgid": "24",
+                "angle": "0",
+                "normalize": null,
+                "geometry": "414x1134-56-36"
+            },
+            "14": {
+                "sizes": {
+                    "400": {
+                        "w": 326,
+                        "h": 400
+                    },
+                    "100": {
+                        "h": 100,
+                        "w": 81
+                    },
+                    "full": {
+                        "h": 2785,
+                        "w": 2268
+                    }
+                },
+                "uploader": "kreg",
+                "uploaded_t": 1537340018
+            },
+            "22": {
+                "sizes": {
+                    "100": {
+                        "w": 100,
+                        "h": 28
+                    },
+                    "full": {
+                        "w": 2050,
+                        "h": 571
+                    },
+                    "400": {
+                        "w": 400,
+                        "h": 111
+                    }
+                },
+                "uploader": "kiliweb",
+                "uploaded_t": 1554391486
+            },
+            "9": {
+                "uploaded_t": 1537009701,
+                "uploader": "sand64",
+                "sizes": {
+                    "400": {
+                        "h": 400,
+                        "w": 137
+                    },
+                    "full": {
+                        "w": 1100,
+                        "h": 3207
+                    },
+                    "100": {
+                        "w": 34,
+                        "h": 100
+                    }
+                }
+            },
+            "3": {
+                "uploaded_t": 1535966634,
+                "uploader": "kiliweb",
+                "sizes": {
+                    "100": {
+                        "h": 100,
+                        "w": 36
+                    },
+                    "full": {
+                        "w": 430,
+                        "h": 1200
+                    },
+                    "400": {
+                        "w": 143,
+                        "h": 400
+                    }
+                }
+            },
+            "7": {
+                "uploader": "sebleouf",
+                "uploaded_t": 1536994211,
+                "sizes": {
+                    "100": {
+                        "h": 100,
+                        "w": 75
+                    },
+                    "full": {
+                        "h": 3226,
+                        "w": 2419
+                    },
+                    "400": {
+                        "w": 300,
+                        "h": 400
+                    }
+                }
+            },
+            "nutrition_fr": {
+                "sizes": {
+                    "100": {
+                        "h": 71,
+                        "w": 100
+                    },
+                    "full": {
+                        "h": 1337,
+                        "w": 1892
+                    },
+                    "400": {
+                        "w": 400,
+                        "h": 283
+                    },
+                    "200": {
+                        "w": 200,
+                        "h": 141
+                    }
+                },
+                "imgid": "30",
+                "rev": "122",
+                "angle": 0,
+                "normalize": null,
+                "geometry": "0x0--1--1",
+                "white_magic": null,
+                "x2": "-1",
+                "x1": "-1",
+                "y2": "-1",
+                "y1": "-1"
+            },
+            "11": {
+                "sizes": {
+                    "400": {
+                        "w": 329,
+                        "h": 400
+                    },
+                    "100": {
+                        "h": 100,
+                        "w": 82
+                    },
+                    "full": {
+                        "w": 1814,
+                        "h": 2208
+                    }
+                },
+                "uploader": "sand64",
+                "uploaded_t": 1537009726
+            },
+            "ingredients_fr": {
+                "y2": "67",
+                "x1": "15",
+                "y1": "27",
+                "white_magic": null,
+                "x2": "330",
+                "normalize": null,
+                "angle": "0",
+                "geometry": "1163x147-55-99",
+                "sizes": {
+                    "400": {
+                        "h": 51,
+                        "w": 400
+                    },
+                    "200": {
+                        "h": 25,
+                        "w": 200
+                    },
+                    "100": {
+                        "h": 13,
+                        "w": 100
+                    },
+                    "full": {
+                        "w": 1163,
+                        "h": 147
+                    }
+                },
+                "imgid": "27",
+                "rev": "120"
+            },
+            "19": {
+                "sizes": {
+                    "400": {
+                        "h": 400,
+                        "w": 300
+                    },
+                    "full": {
+                        "w": 3024,
+                        "h": 4032
+                    },
+                    "100": {
+                        "w": 75,
+                        "h": 100
+                    }
+                },
+                "uploader": "openfoodfacts-contributors",
+                "uploaded_t": 1550078128
+            },
+            "24": {
+                "uploader": "kiliweb",
+                "uploaded_t": 1554473045,
+                "sizes": {
+                    "full": {
+                        "h": 1200,
+                        "w": 539
+                    },
+                    "100": {
+                        "w": 45,
+                        "h": 100
+                    },
+                    "400": {
+                        "w": 180,
+                        "h": 400
+                    }
+                }
+            },
+            "25": {
+                "sizes": {
+                    "400": {
+                        "w": 300,
+                        "h": 400
+                    },
+                    "full": {
+                        "h": 3264,
+                        "w": 2448
+                    },
+                    "100": {
+                        "h": 100,
+                        "w": 75
+                    }
+                },
+                "uploaded_t": 1565866002,
+                "uploader": "openfoodfacts-contributors"
+            },
+            "12": {
+                "sizes": {
+                    "full": {
+                        "h": 2476,
+                        "w": 3302
+                    },
+                    "100": {
+                        "h": 75,
+                        "w": 100
+                    },
+                    "400": {
+                        "w": 400,
+                        "h": 300
+                    }
+                },
+                "uploader": "kiliweb",
+                "uploaded_t": 1537298003
+            },
+            "29": {
+                "sizes": {
+                    "100": {
+                        "w": 38,
+                        "h": 100
+                    },
+                    "full": {
+                        "h": 3027,
+                        "w": 1144
+                    },
+                    "400": {
+                        "h": 400,
+                        "w": 151
+                    }
+                },
+                "uploaded_t": 1573903918,
+                "uploader": "charlesnepote"
+            },
+            "10": {
+                "sizes": {
+                    "full": {
+                        "h": 1616,
+                        "w": 2262
+                    },
+                    "100": {
+                        "w": 100,
+                        "h": 71
+                    },
+                    "400": {
+                        "h": 286,
+                        "w": 400
+                    }
+                },
+                "uploader": "sand64",
+                "uploaded_t": 1537009710
+            },
+            "21": {
+                "uploader": "kiliweb",
+                "uploaded_t": 1554391281,
+                "sizes": {
+                    "full": {
+                        "h": 1200,
+                        "w": 1461
+                    },
+                    "100": {
+                        "w": 100,
+                        "h": 82
+                    },
+                    "400": {
+                        "h": 329,
+                        "w": 400
+                    }
+                }
+            },
+            "30": {
+                "sizes": {
+                    "400": {
+                        "w": 400,
+                        "h": 283
+                    },
+                    "full": {
+                        "w": 1892,
+                        "h": 1337
+                    },
+                    "100": {
+                        "h": 71,
+                        "w": 100
+                    }
+                },
+                "uploader": "fabe56",
+                "uploaded_t": 1590906948
+            },
+            "13": {
+                "uploader": "kreg",
+                "uploaded_t": 1537339983,
+                "sizes": {
+                    "full": {
+                        "h": 3083,
+                        "w": 2152
+                    },
+                    "100": {
+                        "h": 100,
+                        "w": 70
+                    },
+                    "400": {
+                        "w": 279,
+                        "h": 400
+                    }
+                }
+            },
+            "6": {
+                "sizes": {
+                    "400": {
+                        "w": 225,
+                        "h": 400
+                    },
+                    "100": {
+                        "w": 56,
+                        "h": 100
+                    },
+                    "full": {
+                        "h": 4250,
+                        "w": 2390
+                    }
+                },
+                "uploaded_t": 1536953231,
+                "uploader": "sebleouf"
+            },
+            "8": {
+                "sizes": {
+                    "400": {
+                        "h": 300,
+                        "w": 400
+                    },
+                    "100": {
+                        "h": 75,
+                        "w": 100
+                    },
+                    "full": {
+                        "w": 3226,
+                        "h": 2420
+                    }
+                },
+                "uploaded_t": 1536994277,
+                "uploader": "teolemon"
+            },
+            "18": {
+                "uploader": "openfoodfacts-contributors",
+                "uploaded_t": 1550078122,
+                "sizes": {
+                    "400": {
+                        "w": 300,
+                        "h": 400
+                    },
+                    "100": {
+                        "w": 75,
+                        "h": 100
+                    },
+                    "full": {
+                        "h": 4032,
+                        "w": 3024
+                    }
+                }
+            },
+            "27": {
+                "uploaded_t": 1571474117,
+                "uploader": "charlesnepote",
+                "sizes": {
+                    "full": {
+                        "h": 328,
+                        "w": 1477
+                    },
+                    "100": {
+                        "w": 100,
+                        "h": 22
+                    },
+                    "400": {
+                        "w": 400,
+                        "h": 89
+                    }
+                }
+            },
+            "17": {
+                "uploaded_t": 1550078101,
+                "uploader": "openfoodfacts-contributors",
+                "sizes": {
+                    "400": {
+                        "h": 400,
+                        "w": 300
+                    },
+                    "100": {
+                        "h": 100,
+                        "w": 75
+                    },
+                    "full": {
+                        "h": 4032,
+                        "w": 3024
+                    }
+                }
+            },
+            "2": {
+                "uploader": "kiliweb",
+                "uploaded_t": 1535844932,
+                "sizes": {
+                    "400": {
+                        "h": 400,
+                        "w": 126
+                    },
+                    "100": {
+                        "w": 32,
+                        "h": 100
+                    },
+                    "full": {
+                        "h": 1200,
+                        "w": 379
+                    }
+                }
+            },
+            "1": {
+                "uploader": "kiliweb",
+                "uploaded_t": 1532510865,
+                "sizes": {
+                    "full": {
+                        "w": 1540,
+                        "h": 1200
+                    },
+                    "100": {
+                        "w": 100,
+                        "h": 78
+                    },
+                    "400": {
+                        "w": 400,
+                        "h": 312
+                    }
+                }
+            }
+        },
+        "nova_group_tags": [
+            "not-applicable"
+        ],
+        "languages_hierarchy": [
+            "en:french"
+        ],
+        "vitamins_prev_tags": [],
+        "allergens": "",
+        "other_nutritional_substances_tags": [],
+        "pnns_groups_1": "Beverages",
+        "_id": "5410188029475",
+        "nova_groups_tags": [
+            "en:1-unprocessed-or-minimally-processed-foods"
+        ],
+        "interface_version_modified": "20150316.jqm2",
+        "generic_name": "",
+        "popularity_tags": [
+            "top-10000-scans-2020",
+            "top-50000-scans-2020",
+            "top-100000-scans-2020",
+            "top-90-percent-scans-2020",
+            "top-95-percent-scans-2020",
+            "top-10000-fr-scans-2020",
+            "top-50000-fr-scans-2020",
+            "top-100000-fr-scans-2020",
+            "top-country-fr-scans-2020",
+            "top-5000-scans-2019",
+            "top-10000-scans-2019",
+            "top-50000-scans-2019",
+            "top-100000-scans-2019",
+            "at-least-5-scans-2019",
+            "at-least-10-scans-2019",
+            "top-90-percent-scans-2019",
+            "top-95-percent-scans-2019",
+            "top-5000-fr-scans-2019",
+            "top-10000-fr-scans-2019",
+            "top-50000-fr-scans-2019",
+            "top-100000-fr-scans-2019",
+            "top-country-fr-scans-2019",
+            "at-least-5-fr-scans-2019",
+            "at-least-10-fr-scans-2019",
+            "top-5000-lu-scans-2019",
+            "top-10000-lu-scans-2019",
+            "top-50000-lu-scans-2019",
+            "top-100000-lu-scans-2019"
+        ],
+        "ingredients_text_with_allergens_fr": "Jus d'orange.",
+        "image_url": "https://static.openfoodfacts.org/images/products/541/018/802/9475/front_fr.116.400.jpg",
+        "ciqual_food_name_tags": [
+            "orange-juice-pure-juice"
+        ],
+        "nova_group_debug": "",
+        "ingredients": [
+            {
+                "text": "Jus d'orange",
+                "percent_max": 100,
+                "id": "en:orange-juice",
+                "vegan": "yes",
+                "vegetarian": "yes",
+                "rank": 1,
+                "percent_min": 100
+            }
+        ],
+        "photographers_tags": [
+            "kiliweb",
+            "stephane",
+            "sebleouf",
+            "teolemon",
+            "sand64",
+            "kreg",
+            "openfoodfacts-contributors",
+            "charlesnepote",
+            "fabe56"
+        ],
+        "traces_tags": [],
+        "ingredients_n_tags": [
+            "1",
+            "1-10"
+        ],
+        "minerals_prev_tags": [],
+        "countries_tags": [
+            "en:france"
+        ],
+        "traces_from_user": "(fr) ",
+        "unique_scans_n": 136,
+        "traces_lc": "fr",
+        "image_thumb_url": "https://static.openfoodfacts.org/images/products/541/018/802/9475/front_fr.116.100.jpg",
+        "lc": "fr",
+        "image_nutrition_thumb_url": "https://static.openfoodfacts.org/images/products/541/018/802/9475/nutrition_fr.122.100.jpg",
+        "manufacturing_places": "",
+        "emb_codes_tags": [],
+        "link": "",
+        "traces_hierarchy": [],
+        "nutrition_grades_tags": [
+            "c"
+        ],
+        "image_nutrition_small_url": "https://static.openfoodfacts.org/images/products/541/018/802/9475/nutrition_fr.122.200.jpg",
+        "languages": {
+            "en:french": 5
+        },
+        "categories": "Aliments et boissons à base de végétaux, Boissons, Boissons à base de végétaux, Jus et nectars, Boissons aux fruits, Jus de fruits, Boissons sans alcool, Jus d'orange, Jus de fruits pur jus, Jus d'orange pur jus",
+        "last_image_dates_tags": [
+            "2020-05-31",
+            "2020-05",
+            "2020"
+        ],
+        "correctors_tags": [
+            "tacite",
+            "scanparty-franprix-05-2016",
+            "boism",
+            "kiliweb",
+            "moon-rabbit",
+            "yuka.WGYwZEVQd2hwS2xSdi9FeHBVejdxODFQM28rNEJ6eXdLdWdKSWc9PQ",
+            "yuka.UWI0T0FwUVJuL0lGaGNjNTV5TDBwWXh6eW83eGJVbUdBdEliSVE9PQ",
+            "openfoodfacts-contributors",
+            "yuka.WG9VOVByZ0d2ZlphcThaa3BUSEsyTzlGNjhTRWZ6K0pGZk5KSVE9PQ",
+            "yuka.ZUxBQUQ0Z0kvOE1EZ1AwYy94My85dFIzOVoycWJGK3lNOHdNSVE9PQ",
+            "sand64",
+            "paadyp",
+            "youplaboum",
+            "date-limite-app",
+            "charlesnepote",
+            "fabe56"
+        ],
+        "pnns_groups_1_tags": [
+            "beverages",
+            "known"
+        ],
+        "traces_from_ingredients": "",
+        "image_small_url": "https://static.openfoodfacts.org/images/products/541/018/802/9475/front_fr.116.200.jpg",
+        "data_quality_errors_tags": [],
+        "labels": "Sans sucre ajouté",
+        "nova_group": 1,
+        "ingredients_original_tags": [
+            "en:orange-juice"
+        ],
+        "created_t": 1532353254,
+        "image_front_url": "https://static.openfoodfacts.org/images/products/541/018/802/9475/front_fr.116.400.jpg",
+        "stores": "Magasins U,Intermarché",
+        "emb_codes_orig": "",
+        "product_name": "Tropicana pure premium orange sans pulpe 100% pur fruit pressé",
+        "minerals_tags": [],
+        "categories_lc": "fr",
+        "image_nutrition_url": "https://static.openfoodfacts.org/images/products/541/018/802/9475/nutrition_fr.122.400.jpg",
+        "last_editor": "fabe56",
+        "product_name_fr": "Tropicana pure premium orange sans pulpe 100% pur fruit pressé",
+        "labels_hierarchy": [
+            "en:no-added-sugar"
+        ],
+        "allergens_hierarchy": [],
+        "origins_tags": [],
+        "manufacturing_places_tags": [],
+        "id": "5410188029475",
+        "nutrition_score_warning_fruits_vegetables_nuts_from_category": "en:fruit-juices",
+        "generic_name_fr": "",
+        "labels_tags": [
+            "en:no-added-sugar"
+        ],
+        "fruits-vegetables-nuts_100g_estimate": 100,
+        "compared_to_category": "en:fruit-juices-and-nectars",
+        "nutrient_levels_tags": [
+            "en:fat-in-low-quantity",
+            "en:saturated-fat-in-low-quantity",
+            "en:sugars-in-high-quantity",
+            "en:salt-in-low-quantity"
+        ],
+        "image_front_thumb_url": "https://static.openfoodfacts.org/images/products/541/018/802/9475/front_fr.116.100.jpg",
+        "serving_size": "100ml",
+        "origins": "",
+        "ingredients_that_may_be_from_palm_oil_n": 0,
+        "nutrition_data_prepared": "",
+        "codes_tags": [
+            "code-13",
+            "5410188029xxx",
+            "541018802xxxx",
+            "54101880xxxxx",
+            "5410188xxxxxx",
+            "541018xxxxxxx",
+            "54101xxxxxxxx",
+            "5410xxxxxxxxx",
+            "541xxxxxxxxxx",
+            "54xxxxxxxxxxx",
+            "5xxxxxxxxxxxx"
+        ],
+        "nova_groups": "1",
+        "amino_acids_prev_tags": [],
+        "ingredients_percent_analysis": 1,
+        "nutrition_data_prepared_per_debug_tags": [],
+        "countries": "France",
+        "nutrition_grade_fr": "c",
+        "editors_tags": [
+            "yuka.Wkl3UlFmUVJxZGd3aHRnZy9TTDJ4OGhybnBpYmJVR2RjdEF3SUE9PQ",
+            "yuka.WDdrSlBJNGx2Y0VzeE50am9pS1Arc3RYblorblp6NjRCZFl6SVE9PQ",
+            "boism",
+            "teolemon",
+            "date-limite-app",
+            "yuka.VjdFa1RhNGZpZHNQcE50aG9SVHArWXg1OW9iMllFS3hNN0ZMSVE9PQ",
+            "yuka.YTdFN041WU0vZWRhdzhJTzhpL1NwTWhhd29XV1pscThOdkkwSVE9PQ",
+            "charlesnepote",
+            "openfoodfacts-contributors",
+            "youplaboum",
+            "roboto-app",
+            "scanparty-franprix-05-2016",
+            "tacite",
+            "sand64",
+            "yuka.WHZndk41dFFwdmdTbE1Vam9oU09wUEZLMWJTSVd6dXlHdG96SUE9PQ",
+            "kreg",
+            "yuka.SElFYVFMVUJ1c1Fsd05zZHdqelZxOUJVbWJHSlJYT3VCc1ZCSVE9PQ",
+            "yuka.WGFvUk92dzV0OFlCcE1FNjV5T042OHB5eXJueEFHbVBEdUZCSUE9PQ",
+            "yuka.RzVzd0xJa2lqZWdReHZNazNrenUvNE1wL0xLcFV6dnFkTE1BSWc9PQ",
+            "yuka.WGFjWkRKa0tuZjlidlBFd3drclI0dlpSK29mNVhIL3FJZHROSVE9PQ",
+            "yuka.R2Frd040VUt2Y1VXeGNjYzF6LzJ5STV4K1pXTlhVcUtMT3d5SVE9PQ",
+            "sebleouf",
+            "kiliweb",
+            "yuka.WG9jT0ZMNE9pOTFTeXNjMG9USFg2dlJLbksrdWVubXJOY1FvSVE9PQ",
+            "yuka.WG9VOVByZ0d2ZlphcThaa3BUSEsyTzlGNjhTRWZ6K0pGZk5KSVE9PQ",
+            "magasins-u",
+            "paadyp",
+            "stephane",
+            "yuka.WEo4RkU0QUh1Tnd1bU5zQzVRLzZxOTBsd1o2YlgyZVhjZXdPSVE9PQ",
+            "yuka.VjZkYUtJY3JtS0JieC9OaDFRTGUxczBzNk1TUGZXZUdLK2t2SVE9PQ",
+            "yuka.SExnbk5xSTh0UFZheS9ZLzV3THh4b3BveHFTc2JENlhOTWcvSVE9PQ",
+            "yuka.WGYwZEVQd2hwS2xSdi9FeHBVejdxODFQM28rNEJ6eXdLdWdKSWc9PQ",
+            "fabe56",
+            "yuka.ZUxBQUQ0Z0kvOE1EZ1AwYy94My85dFIzOVoycWJGK3lNOHdNSVE9PQ",
+            "yuka.UWI0T0FwUVJuL0lGaGNjNTV5TDBwWXh6eW83eGJVbUdBdEliSVE9PQ",
+            "yuka.WElrTkNQc3RqZWd3dnNOdTAwek42OGdyNTVyNVVWNkpGTkFTSVE9PQ",
+            "yuka.R2JBNFQ1MFA5dEJYZzhFQW9pNzV5OHhYMXJ2MEFsT05HdFZOSUE9PQ",
+            "moon-rabbit"
+        ],
+        "image_ingredients_url": "https://static.openfoodfacts.org/images/products/541/018/802/9475/ingredients_fr.120.400.jpg",
+        "product_quantity": 1000,
+        "states_hierarchy": [
+            "en:to-be-checked",
+            "en:complete",
+            "en:nutrition-facts-completed",
+            "en:ingredients-completed",
+            "en:expiration-date-to-be-completed",
+            "en:packaging-code-to-be-completed",
+            "en:characteristics-completed",
+            "en:categories-completed",
+            "en:brands-completed",
+            "en:packaging-completed",
+            "en:quantity-completed",
+            "en:product-name-completed",
+            "en:photos-validated",
+            "en:photos-uploaded"
+        ],
+        "pnns_groups_2_tags": [
+            "fruit-juices",
+            "known"
+        ],
+        "nutrition_grades": "c",
+        "interface_version_created": "20150316.jqm2",
+        "ingredients_text_fr": "Jus d'orange.",
+        "states": "en:to-be-checked, en:complete, en:nutrition-facts-completed, en:ingredients-completed, en:expiration-date-to-be-completed, en:packaging-code-to-be-completed, en:characteristics-completed, en:categories-completed, en:brands-completed, en:packaging-completed, en:quantity-completed, en:product-name-completed, en:photos-validated, en:photos-uploaded",
+        "category_properties": {
+            "ciqual_food_name:en": "Orange juice, pure juice",
+            "ciqual_food_name:fr": "Jus d'orange, pur jus"
+        },
+        "ingredients_ids_debug": [
+            "jus-d-orange",
+            "sans-sucre-ajoute"
+        ],
+        "data_quality_tags": [
+            "en:ingredients-percent-analysis-ok"
+        ],
+        "packaging": "brick",
+        "no_nutrition_data": "",
+        "scans_n": 235,
+        "data_sources_tags": [
+            "app-yuka",
+            "apps"
+        ],
+        "categories_properties_tags": [
+            "all-products",
+            "categories-known",
+            "agribalyse-food-code-unknown",
+            "agribalyse-proxy-food-code-unknown",
+            "ciqual-food-code-2070",
+            "ciqual-food-code-known",
+            "agribalyse-unknown"
+        ],
+        "creator": "kiliweb",
+        "countries_hierarchy": [
+            "en:france"
+        ],
+        "languages_tags": [
+            "en:french",
+            "en:1"
+        ],
+        "traces": "",
+        "nutriscore_score": 2,
+        "stores_tags": [
+            "magasins-u",
+            "intermarche"
+        ],
+        "misc_tags": [
+            "en:nutrition-fruits-vegetables-nuts-from-category",
+            "en:nutrition-fruits-vegetables-nuts-from-category-en-fruit-juices",
+            "en:nutrition-all-nutriscore-values-known",
+            "en:nutriscore-computed"
+        ],
+        "quantity": "1L",
+        "emb_codes": "",
+        "data_quality_bugs_tags": [],
+        "last_modified_t": 1590906949,
+        "nutrition_score_beverage": 1,
+        "expiration_date": "",
+        "ingredients_text_with_allergens": "Jus d'orange.",
+        "additives_old_n": 0,
+        "completeness": 0.8,
+        "nutriscore_data": {
+            "proteins_value": 0.8,
+            "saturated_fat_ratio_points": 0,
+            "fiber": 0.6,
+            "proteins_points": 0,
+            "is_water": 0,
+            "saturated_fat_value": 0,
+            "sugars_value": 8.9,
+            "fiber_value": 0.6,
+            "sugars": 8.9,
+            "energy_value": 180,
+            "energy_points": 6,
+            "score": 2,
+            "energy": 180,
+            "saturated_fat_points": 0,
+            "negative_points": 12,
+            "grade": "c",
+            "is_fat": 0,
+            "saturated_fat": 0,
+            "saturated_fat_ratio": 0,
+            "is_cheese": 0,
+            "is_beverage": 1,
+            "sodium_points": 0,
+            "saturated_fat_ratio_value": 0,
+            "fruits_vegetables_nuts_colza_walnut_olive_oils_points": 10,
+            "positive_points": 10,
+            "fruits_vegetables_nuts_colza_walnut_olive_oils_value": 100,
+            "fiber_points": 0,
+            "sodium_value": 0,
+            "fruits_vegetables_nuts_colza_walnut_olive_oils": 100,
+            "proteins": 0.8,
+            "sugars_points": 6,
+            "sodium": 0
+        },
+        "purchase_places_tags": [
+            "france"
+        ],
+        "known_ingredients_n": 5,
+        "popularity_key": -80009999853,
+          "nutrient_levels": {
+            "sugars": "high",
+            "salt": "low",
+            "saturated-fat": "low",
+            "fat": "low"
+        },
+        
+        "brands": "Tropicana",
+        "nutrition_data": "on",
+        "checkers_tags": [],
+        "allergens_from_user": "(fr) ",
+        "ingredients_text": "Jus d'orange.",
+        "unknown_nutrients_tags": [],
+        "nutrition_data_per": "100g",
+        "categories_tags": [
+            "en:plant-based-foods-and-beverages",
+            "en:beverages",
+            "en:plant-based-beverages",
+            "en:juices-and-nectars",
+            "en:fruit-based-beverages",
+            "en:fruit-juices",
+            "en:non-alcoholic-beverages",
+            "en:orange-juices",
+            "en:squeezed-juices",
+            "en:squeezed-orange-juices"
+        ],
+        "nutrition_data_prepared_per": "100g",
+        "nutrition_score_warning_fruits_vegetables_nuts_from_category_value": 100,
+        "ingredients_text_debug": "Jus d'orange. Sans sucre ajouté",
+        "last_edit_dates_tags": [
+            "2020-05-31",
+            "2020-05",
+            "2020"
+        ],
+        "sortkey": -98409093051,
+        "max_imgid": "30",
+        "entry_dates_tags": [
+            "2018-07-23",
+            "2018-07",
+            "2018"
+        ],
+        "code": "5410188029475",
+        "nutrient_levels": {
+            "sugars": "high",
+            "salt": "low",
+            "saturated-fat": "low",
+            "fat": "low"
+        },
+        "brands_tags": [
+            "tropicana"
+        "generic_name_fr_debug_tags": [],
+        "nucleotides_tags": [],
+        "purchase_places": "France",
+        "states_tags": [
+            "en:to-be-checked",
+            "en:complete",
+            "en:nutrition-facts-completed",
+            "en:ingredients-completed",
+            "en:expiration-date-to-be-completed",
+            "en:packaging-code-to-be-completed",
+            "en:characteristics-completed",
+            "en:categories-completed",
+            "en:brands-completed",
+            "en:packaging-completed",
+            "en:quantity-completed",
+            "en:product-name-completed",
+            "en:photos-validated",
+            "en:photos-uploaded"
+        ],
+        "expiration_date_debug_tags": [],
+        "packaging_tags": [
+            "brick"
+        ],
+        "image_front_small_url": "https://static.openfoodfacts.org/images/products/541/018/802/9475/front_fr.116.200.jpg",
+        "nutriments": {
+            "nova-group_serving": 1,
+            "energy-kcal_unit": "kcal",
+            "energy_100g": 180,
+            "nutrition-score-fr_serving": 2,
+            "salt_unit": "g",
+            "vitamin-c_value": 28,
+            "vitamin-c": 0.028,
+            "proteins_serving": 0.8,
+            "saturated-fat_100g": 0,
+            "sodium_value": 0,
+            "sugars_serving": 8.9,
+            "salt": 0,
+            "energy-kcal_serving": 43,
+            "vitamin-c_serving": 0.028,
+            "saturated-fat_serving": 0,
+            "carbohydrates_100g": 8.9,
+            "proteins": 0.8,
+            "fiber_100g": 0.6,
+            "nova-group": 1,
+            "nova-group_100g": 1,
+            "energy_unit": "kcal",
+            "nutrition-score-fr_100g": 2,
+            "fat_value": 0,
+            "sodium": 0,
+            "fat_serving": 0,
+            "fiber_serving": 0.6,
+            "proteins_100g": 0.8,
+            "nutrition-score-fr": 2,
+            "energy-kcal_100g": 43,
+            "energy-kcal_value": 43,
+            "sodium_100g": 0,
+            "carbohydrates_unit": "g",
+            "proteins_value": 0.8,
+            "saturated-fat": 0,
+            "sodium_unit": "g",
+            "proteins_unit": "g",
+            "salt_100g": 0,
+            "sugars_unit": "g",
+            "saturated-fat_value": 0,
+            "energy_serving": 180,
+            "fat_100g": 0,
+            "fiber": 0.6,
+            "salt_serving": 0,
+            "vitamin-c_unit": "mg",
+            "fruits-vegetables-nuts-estimate-from-ingredients_100g": 100,
+            "sugars_value": 8.9,
+            "carbohydrates": 8.9,
+            "fiber_value": 0.6,
+            "saturated-fat_unit": "g",
+            "energy-kcal": 43,
+            "carbohydrates_value": 8.9,
+            "sugars": 8.9,
+            "energy_value": 43,
+            "salt_value": 0,
+            "fiber_unit": "g",
+            "carbohydrates_serving": 8.9,
+            "sugars_100g": 8.9,
+            "energy": 180,
+            "fat": 0,
+            "vitamin-c_100g": 0.028,
+            "sodium_serving": 0,
+            "fat_unit": "g"
+        },
+        "unknown_ingredients_n": 0,
+        "data_quality_warnings_tags": [],
+        "brands_tags": [
+            "tropicana"
+        ],
+        "additives_old_tags": [],
+        "additives_original_tags": [],
+        "informers_tags": [
+            "openfoodfacts-contributors",
+            "tacite",
+            "scanparty-franprix-05-2016",
+            "boism",
+            "moon-rabbit",
+            "kiliweb",
+            "magasins-u",
+            "sand64",
+            "paadyp",
+            "youplaboum",
+            "roboto-app",
+            "charlesnepote"
+        ],
+        "ingredients_debug": [
+            "Jus d'orange",
+            ". ",
+            null,
+            null,
+            null,
+            "Sans sucre ajouté"
+        ],
+        "update_key": "agribalyse10",
+        "additives_n": 0,
+        "last_modified_by": "fabe56",
+        "lang": "fr",
+        "data_sources": "App - yuka, Apps",
+        "vitamins_tags": [],
+        "selected_images": {
+            "nutrition": {
+                "small": {
+                    "fr": "https://static.openfoodfacts.org/images/products/541/018/802/9475/nutrition_fr.122.200.jpg"
+                },
+                "thumb": {
+                    "fr": "https://static.openfoodfacts.org/images/products/541/018/802/9475/nutrition_fr.122.100.jpg"
+                },
+                "display": {
+                    "fr": "https://static.openfoodfacts.org/images/products/541/018/802/9475/nutrition_fr.122.400.jpg"
+                }
+            },
+            "front": {
+                "display": {
+                    "fr": "https://static.openfoodfacts.org/images/products/541/018/802/9475/front_fr.116.400.jpg"
+                },
+                "small": {
+                    "fr": "https://static.openfoodfacts.org/images/products/541/018/802/9475/front_fr.116.200.jpg"
+                },
+                "thumb": {
+                    "fr": "https://static.openfoodfacts.org/images/products/541/018/802/9475/front_fr.116.100.jpg"
+                }
+            },
+            "ingredients": {
+                "thumb": {
+                    "fr": "https://static.openfoodfacts.org/images/products/541/018/802/9475/ingredients_fr.120.100.jpg"
+                },
+                "small": {
+                    "fr": "https://static.openfoodfacts.org/images/products/541/018/802/9475/ingredients_fr.120.200.jpg"
+                },
+                "display": {
+                    "fr": "https://static.openfoodfacts.org/images/products/541/018/802/9475/ingredients_fr.120.400.jpg"
+                }
+            }
+        },
+        "_keywords": [
+            "san",
+            "pure",
+            "de",
+            "base",
+            "ajoute",
+            "fruit-juices-and-nectar",
+            "ju",
+            "alcool",
+            "vegetaux",
+            "pulpe",
+            "sucre",
+            "aliment",
+            "pur",
+            "orange",
+            "fruit",
+            "tropicana",
+            "et",
+            "aux",
+            "presse",
+            "boisson",
+            "100",
+            "nectar",
+            "premium"
+        ],
+        "categories_hierarchy": [
+            "en:plant-based-foods-and-beverages",
+            "en:beverages",
+            "en:plant-based-beverages",
+            "en:juices-and-nectars",
+            "en:fruit-based-beverages",
+            "en:fruit-juices",
+            "en:non-alcoholic-beverages",
+            "en:orange-juices",
+            "en:squeezed-juices",
+            "en:squeezed-orange-juices"
+        ],
+        "last_image_t": 1590906948,
+        "serving_quantity": 100,
+        "additives_tags": [],
+        "debug_param_sorted_langs": [
+            "fr"
+        ],
+        "ingredients_from_palm_oil_tags": [],
+        "pnns_groups_2": "Fruit juices",
+        "ingredients_from_or_that_may_be_from_palm_oil_n": 0,
+        "countries_lc": "fr",
+        "additives_debug_tags": [],
+        "completed_t": 1537897436,
+        "nutriscore_grade": "c"
+    },
+    "status": 1,
+    "code": "5410188029475"
+}

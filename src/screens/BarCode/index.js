@@ -1,10 +1,12 @@
 import React, { useState, useEffect } from 'react';
-import { Text, View, StyleSheet, Button, Vibration } from 'react-native';
+import { Text, View, StyleSheet, Vibration, Alert, Button } from 'react-native';
 import { BarCodeScanner } from 'expo-barcode-scanner';
 import globalStyle from '../../utils/globalStyle';
+import label from '../../utils/labels';
 
 const BarCodeScreen = ({ navigation }) => {
   const [hasPermission, setHasPermission] = useState(null);
+  const [isBarCode, setIsBarCode] = useState('org.gs1.EAN-13');
   const [scanned, setScanned] = useState(false);
 
   useEffect(() => {
@@ -17,15 +19,22 @@ const BarCodeScreen = ({ navigation }) => {
   const handleBarCodeScanned = ({ type, data }) => {
     setScanned(true);
     Vibration.vibrate();
-    fetch(`https://world.openfoodfacts.org/api/v0/product/${data}.json`)
+
+    isBarCode === type
+    ? fetch(`https://world.openfoodfacts.org/api/v0/product/${data}.json`)
         .then(res => res.json())
         .then(result => {
-            navigation.navigate('DetailsBarCode', {
-                screen: 'DetailsBarCodeScreen',
-                params: { data: result },
-            });
-            
+            result.status
+              ? navigation.navigate('DetailsBarCode', {
+                  screen: 'DetailsBarCodeScreen',
+                  params: { data: result },
+              })
+              : navigation.navigate('Error', {
+                screen: 'ErrorScreen',
+            })
+            setScanned(false);
         })
+    : Alert.alert(label.BarCode.isNotBarCode);
   };
 
   if (hasPermission === null) {
@@ -36,16 +45,12 @@ const BarCodeScreen = ({ navigation }) => {
   }
 
   return (
-    <View
-      style={globalStyle.contentQRCode}>
-        <Text
-            style={globalStyle.titleBarCode}
-          >Scan your article</Text>
+    <View style={globalStyle.contentQRCode}>
+      <Text style={globalStyle.titleBarCode}>{label.BarCode.title}</Text>
       <BarCodeScanner
-        onBarCodeScanned={scanned ? undefined : handleBarCodeScanned}
+        onBarCodeScanned={!scanned && handleBarCodeScanned}
         style={StyleSheet.absoluteFillObject}
       />
-
       {scanned && <Button title={'Tap to Scan Again'} onPress={() => setScanned(false)} />}
     </View>
   );

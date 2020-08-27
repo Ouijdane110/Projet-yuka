@@ -34,19 +34,18 @@ const App = () => {
           tabBarOptions={{
             style: {
               height: 75,
+              backgroundColor: colors.white,
             },
             tabStyle: {
               height: 75,
-              marginRight: 70,
-              marginLeft: 70,
-              backgroundColor: colors.white,
+              marginLeft: -145,
+              paddingLeft: 54,
+              paddingRight: 240,
             },
           }}
       >
           { 
-            roadMap.map((prop,key) => prop.inTab 
-              ? <Tab.Screen name={prop.name} component={prop.component} options={{ tabBarLabel: '', tabBarIcon: () => gestionIconTab(prop.name)}} key={key} />
-              : <Tab.Screen name={prop.name} component={prop.component} options={{ tabBarLabel: '', tabBarVisible: false }} key={key} />
+            roadMap.map((prop,key) => <Tab.Screen name={prop.name} component={prop.component} options={{ tabBarLabel: '', tabBarIcon: () => gestionIconTab(prop.name)}} key={key} />
             )
           }
       </Tab.Navigator>
