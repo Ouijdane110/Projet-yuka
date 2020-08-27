@@ -1,7 +1,9 @@
 import React from 'react';
 // import React, { useEffect } from 'react';
-import { Text, View } from 'react-native';
+import { Text, View, ImageBackground } from 'react-native';
 import globalStyle from '../../utils/globalStyle';
+import style from './style';
+import label from '../../utils/labels';
 
 const SplashScreen = ({ navigation }) => {
     // useEffect(() => {
@@ -13,9 +15,7 @@ const SplashScreen = ({ navigation }) => {
         navigation.replace('BarCode');
     }, 3000);
 
-    return <View style={globalStyle.screensView}>
-            <Text>Splash Screen</Text>
-        </View>
+    return <ImageBackground source={label.FlashScreenImg} style={style.image}></ImageBackground>
 }
 
 export default SplashScreen;

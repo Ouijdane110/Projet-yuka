@@ -1,6 +1,7 @@
 
 -------- Utilisé -------------- 
 Image : product.image_url
+product.brands": "Tropicana",
 Nom du produit : product.product_name": "Tropicana pure premium orange sans pulpe 100% 
 quantité du produit :product.serving_size: "100ml",
 nutrition grade : product.nutrition_grade_fr": "c",
@@ -73,7 +74,6 @@ product.nutrient_levels": {
             "saturated-fat": "low",
             "fat": "low"
         },
-product.brands": "Tropicana",
 
 
 

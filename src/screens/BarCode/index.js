@@ -5,9 +5,9 @@ import globalStyle from '../../utils/globalStyle';
 import label from '../../utils/labels';
 
 const BarCodeScreen = ({ navigation }) => {
-  const [hasPermission, setHasPermission] = useState(null);
-  const [isBarCode, setIsBarCode] = useState('org.gs1.EAN-13');
-  const [scanned, setScanned] = useState(false);
+  const [ hasPermission, setHasPermission ] = useState(null);
+  const [ isBarCode ] = useState('org.gs1.EAN-13');
+  const [ scanned, setScanned ] = useState(false);
 
   useEffect(() => {
     (async () => {
@@ -48,7 +48,7 @@ const BarCodeScreen = ({ navigation }) => {
     <View style={globalStyle.contentQRCode}>
       <Text style={globalStyle.titleBarCode}>{label.BarCode.title}</Text>
       <BarCodeScanner
-        onBarCodeScanned={!scanned && handleBarCodeScanned}
+        onBarCodeScanned={scanned ? undefined : handleBarCodeScanned}
         style={StyleSheet.absoluteFillObject}
       />
       {scanned && <Button title={'Tap to Scan Again'} onPress={() => setScanned(false)} />}

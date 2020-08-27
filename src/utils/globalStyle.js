@@ -15,6 +15,9 @@ const globalStyle = {
         zIndex:20,
         position:'relative',
         fontSize:20,  
+    },
+    bold: {
+        fontWeight: 'bold',
     }
 }
 

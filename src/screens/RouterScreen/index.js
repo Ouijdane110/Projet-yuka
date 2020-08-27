@@ -6,7 +6,7 @@ const Stack = createStackNavigator();
 
 const RouterScreen = () => {
     return (
-        <Stack.Navigator initialRouteName='SplashScreen'>
+        <Stack.Navigator initialRouteName='SplashScreen' headerMode="none">
             { roadMap.map((prop,key) => <Stack.Screen name={prop.name} component={prop.component} key={key} />) }
         </Stack.Navigator>
     );
