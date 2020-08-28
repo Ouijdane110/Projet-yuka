@@ -1,8 +1,9 @@
 import React from 'react';
-import { Text, View, Button, ScrollView, Image } from 'react-native';
+import { Text, View, Button, ScrollView, Image, Alert } from 'react-native';
 import B from '../../components/Bold';
-import globalStyle from '../../utils/globalStyle';
+import colors from '../../utils/color';
 import label from '../../utils/labels';
+import Hearth from '../../components/Icon/hearth'
 import style from './style';
 
 const getNutriScoreLabel = letter => {
@@ -29,6 +30,11 @@ const DetailsBarCodeScreen = ({ route, navigation }) => {
         navigation.navigate('BarCode', {
             screen: 'BarCodeScreen',
         });
+    }
+
+    const addToFavorite = () => {
+        Alert.alert('yoyo')
+        // Ouijdane fait le AsyncStorage
     }
 
     return (
@@ -87,7 +93,13 @@ const DetailsBarCodeScreen = ({ route, navigation }) => {
                     </Text>
                 </ScrollView>
             </View>
-    </View>
+            <Button
+                title="Ajouter au favoris"
+                color={colors.pink}
+                buttonStyle={style.button}
+                onPress={addToFavorite}
+            />
+        </View>
     )
 }
 

@@ -1,4 +1,5 @@
 import colors from '../../utils/color';
+import { color } from 'react-native-reanimated';
 
 const style = {
     contenaire: {
@@ -9,6 +10,7 @@ const style = {
         paddingLeft: 20,
         paddingTop: 200,
         backgroundColor: colors.white,
+        maxHeight: '80%',
     },
     image: {
         // flex: 1,
@@ -34,7 +36,7 @@ const style = {
         right: 10,
     },
     scrollView:{
-        height: 20,
+        maxHeight: 200,
     },
     headerContent: {
         justifyContent: 'center',
@@ -54,6 +56,10 @@ const style = {
         width: 12,
         height: 20,
         marginLeft: 10,
+    },
+    button: {
+        padding: 20,
+        backgroundColor: 'red',
     }
 }
 

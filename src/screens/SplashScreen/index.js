@@ -1,6 +1,6 @@
 import React from 'react';
 // import React, { useEffect } from 'react';
-import { Text, View, ImageBackground } from 'react-native';
+import { View, ImageBackground } from 'react-native';
 import globalStyle from '../../utils/globalStyle';
 import style from './style';
 import label from '../../utils/labels';
