@@ -31,8 +31,7 @@ const saveInHistorique = async (data) => {
         }
 
         favorite.push(data);
-        console.log('historique', favorite);
-        await AsyncStorage.setItem('historique', JSON.stringify(favorite))
+        await AsyncStorage.setItem('favoris', JSON.stringify(favorite))
     }
     catch (e) {
         console.log('Error : ', e);
