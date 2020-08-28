@@ -1,24 +1,38 @@
-import React from 'react';
-import { Text, View, Button } from 'react-native';
+import React, { useState, useEffect } from 'react';
+import AsyncStorage from '@react-native-community/async-storage';
+import { Text, View, ScrollView } from 'react-native';
+import ListItem from '../../components/ListItem';
 import globalStyle from '../../utils/globalStyle';
-
-const FavorisScreen = () => {
+import style from './style';
+ 
+const FavorisScreen = () =>{
+ 
+    const [ data, setData ] = useState([]);
+    useEffect(() =>{
+        getMyObject();
+    },[]);
+ 
     const getMyObject = async () => {
         try {
-          const jsonValue = await AsyncStorage.getItem('favoris')
-          //return jsonValue != null ? JSON.parse(jsonValue) : null
-          return console.log(jsonValue)
-        } catch(e) {
-          console.log(e)
+            const value = JSON.parse(await AsyncStorage.getItem('favoris'))
+            if (value !== null) {
+                setData(value);
+            }
+        } 
+        catch(e) {
+            console.log(e)
         }
-      
-        console.log('Done.')
-      
-      }
+    }
 
-    return <View style={globalStyle.screensView}>
-        <Text>Favoris</Text>
-        <Button title='click' onPress={getMyObject}/>
+    return <View style={style.contentView}>
+        <Text style={style.title}>Favoris</Text>
+        <ScrollView style={style.scrollView}>
+          {
+              data
+              ? data.map((favoris, key)=> <ListItem data={favoris} key={key}/>)
+              : <Text>Aucune donnée dans votre historique"</Text>
+          }
+        </ScrollView>
     </View>
 }
 

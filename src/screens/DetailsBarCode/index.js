@@ -16,11 +16,11 @@ const saveInHistorique = async (data) => {
 
         historique.push(data);
         await AsyncStorage.setItem('historique', JSON.stringify(historique))
-        }
-        catch (e) {
-            console.log('Error : ', e);
-        }
-  }
+    }
+    catch (e) {
+        console.log('Error : ', e);
+    }
+}
 
   const saveInFavorite = async (data) => {
     try{
@@ -84,24 +84,32 @@ const DetailsBarCodeScreen = ({ route }) => {
                     <Text style={style.scrollTitle}><B>Adapté pour :</B></Text>
                     <Text>
                         <B>Végan :</B>
-                        <Image
-                            style={style.imageYesNo}
-                            source={{uri: label.YesOrNot[data.ingredients[0].vegan]}}
-                        />
+                        {
+                            data.ingredients[0].vegan !== undefined
+                                ? <Image
+                                    style={style.imageYesNo}
+                                    source={{uri: label.YesOrNot[data.ingredients[0].vegan]}}
+                                />
+                                : <Text>N/A</Text>
+                        }
                     </Text>
                     <Text>
                         <B>Végétarien :</B>
-                        <Image
-                            style={style.imageYesNo}
-                            source={{uri: label.YesOrNot[data.ingredients[0].vegetarian]}}
-                        />
+                        {
+                            data.ingredients[0].vegetarian !== undefined
+                                ? <Image
+                                    style={style.imageYesNo}
+                                    source={{uri: label.YesOrNot[data.ingredients[0].vegetarian]}}
+                                />
+                                : <Text>N/A</Text>
+                        }
                     </Text>
                 </ScrollView>
             </View>
             <Button
                 title="Ajouter au favoris"
                 color={colors.pink}
-                onPress={saveInFavorite(data)}
+                onPress={() => saveInFavorite(data)}
             />
         </View>
     )
