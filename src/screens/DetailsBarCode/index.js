@@ -1,41 +1,47 @@
-import React from 'react';
+import React,{useEffect} from 'react';
+import AsyncStorage from '@react-native-community/async-storage';
 import { Text, View, Button, ScrollView, Image, Alert } from 'react-native';
 import B from '../../components/Bold';
 import colors from '../../utils/color';
 import label from '../../utils/labels';
-import Hearth from '../../components/Icon/hearth'
 import style from './style';
 
-const getNutriScoreLabel = letter => {
-    switch(letter){
-        case 'a':
-            return 'https://cdn.discordapp.com/attachments/670302891239800842/748622167440359484/A.png';
-        case 'b':
-            return 'https://cdn.discordapp.com/attachments/670302891239800842/748622169122275328/B.png';
-        case 'c':
-            return 'https://cdn.discordapp.com/attachments/670302891239800842/748622170615185619/C.png';
-        case 'd':
-            return 'https://cdn.discordapp.com/attachments/670302891239800842/748624216772968548/D.png';
-        case 'e':
-            return 'https://cdn.discordapp.com/attachments/670302891239800842/748622166563750049/E.png';
-        default:
-            return true;
-    }
-}
+const saveInHistorique = async (data) => {
+    try{
+        let historique = JSON.parse(await AsyncStorage.getItem('historique'));
 
-const DetailsBarCodeScreen = ({ route, navigation }) => {
+        if(historique === null){
+            historique = [];
+        }
+
+        historique.push(data);
+        await AsyncStorage.setItem('historique', JSON.stringify(historique))
+        }
+        catch (e) {
+            console.log('Error : ', e);
+        }
+  }
+
+  const saveInFavorite = async (data) => {
+    try{
+        let favorite = JSON.parse(await AsyncStorage.getItem('favoris'));
+
+        if(favorite === null){
+            favorite = [];
+        }
+
+        favorite.push(data);
+        console.log('historique', favorite);
+        await AsyncStorage.setItem('historique', JSON.stringify(favorite))
+    }
+    catch (e) {
+        console.log('Error : ', e);
+    }
+  }
+
+const DetailsBarCodeScreen = ({ route }) => {
     const data = route.params.params.data.product;
-    
-    const backToScanner = () => {
-        navigation.navigate('BarCode', {
-            screen: 'BarCodeScreen',
-        });
-    }
-
-    const addToFavorite = () => {
-        Alert.alert('yoyo')
-        // Ouijdane fait le AsyncStorage
-    }
+    saveInHistorique(data);
 
     return (
         <View style={style.contenaire}>
@@ -96,8 +102,7 @@ const DetailsBarCodeScreen = ({ route, navigation }) => {
             <Button
                 title="Ajouter au favoris"
                 color={colors.pink}
-                buttonStyle={style.button}
-                onPress={addToFavorite}
+                onPress={saveInFavorite(data)}
             />
         </View>
     )
