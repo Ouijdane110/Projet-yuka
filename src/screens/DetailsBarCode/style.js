@@ -57,8 +57,12 @@ const style = {
         marginLeft: 10,
     },
     button: {
-        padding: 20,
-        backgroundColor: 'red',
+        padding: 2,
+        marginTop: 50,
+        backgroundColor: colors.blue,
+        width: '100%',
+        flexDirection: 'row',
+        justifyContent: 'center',
     }
 }
 

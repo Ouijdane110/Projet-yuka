@@ -1,9 +1,10 @@
-import React,{useEffect} from 'react';
+import React from 'react';
 import AsyncStorage from '@react-native-community/async-storage';
-import { Text, View, Button, ScrollView, Image, Alert } from 'react-native';
+import { Text, View, ScrollView, Image, TouchableOpacity  } from 'react-native';
 import B from '../../components/Bold';
 import colors from '../../utils/color';
 import label from '../../utils/labels';
+import Hearth from '../../components/Icon/hearth';
 import style from './style';
 
 const saveInHistorique = async (data) => {
@@ -81,36 +82,14 @@ const DetailsBarCodeScreen = ({ route }) => {
                     <Text><B>Graisses saturées:</B> {data.nutrient_levels.fat}</Text>
                     <Text><B>Sucres:</B> {data.nutrient_levels.sugars}</Text>
                     <Text><B>Sel:</B> {data.nutrient_levels.salt}</Text>
-                    <Text style={style.scrollTitle}><B>Adapté pour :</B></Text>
-                    <Text>
-                        <B>Végan :</B>
-                        {
-                            data.ingredients[0].vegan !== undefined
-                                ? <Image
-                                    style={style.imageYesNo}
-                                    source={{uri: label.YesOrNot[data.ingredients[0].vegan]}}
-                                />
-                                : <Text>N/A</Text>
-                        }
-                    </Text>
-                    <Text>
-                        <B>Végétarien :</B>
-                        {
-                            data.ingredients[0].vegetarian !== undefined
-                                ? <Image
-                                    style={style.imageYesNo}
-                                    source={{uri: label.YesOrNot[data.ingredients[0].vegetarian]}}
-                                />
-                                : <Text>N/A</Text>
-                        }
-                    </Text>
                 </ScrollView>
             </View>
-            <Button
-                title="Ajouter au favoris"
-                color={colors.pink}
+            <TouchableOpacity
+                style={style.button}
                 onPress={() => saveInFavorite(data)}
-            />
+            >
+                 <Hearth color={colors.pink} width={40} height={40} />
+            </TouchableOpacity>
         </View>
     )
 }

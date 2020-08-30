@@ -15,7 +15,7 @@ const style = {
         marginRight: 10,
     },
     text:{
-        width: '20%',
+        width: 200,
     },
     titleItem: {
         maxWidth: 300,
