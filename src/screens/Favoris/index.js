@@ -4,8 +4,7 @@ import { Text, View, ScrollView } from 'react-native';
 import ListItem from '../../components/ListItem';
 import style from './style';
  
-const FavorisScreen = () =>{
- 
+const FavorisScreen = () => {
     const [ data, setData ] = useState([]);
     
     useEffect(() =>{
@@ -29,7 +28,7 @@ const FavorisScreen = () =>{
         <ScrollView style={style.scrollView}>
           {
               data
-              ? data.map((favoris, key)=> <ListItem data={favoris} key={key}/>)
+              ? data.map((favoris, key) => <ListItem data={favoris} key={key}/>)
               : <Text>Aucune donnée dans votre historique"</Text>
           }
         </ScrollView>

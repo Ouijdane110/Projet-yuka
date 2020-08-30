@@ -28,8 +28,8 @@ const HistoriqueScreen = () =>{
         <ScrollView style={style.scrollView}>
           {
               data
-              ? data.map((favoris, key)=> <ListItem data={favoris} key={key} />)
-              : <Text>Aucune donnée dans votre historique"</Text>
+              ? data.map((historique, key) => <ListItem data={historique} key={key} />)
+              : <Text>Aucune donnée dans votre historique</Text>
           }
         </ScrollView>
     </View>

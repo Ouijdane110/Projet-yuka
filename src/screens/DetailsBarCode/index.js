@@ -21,7 +21,7 @@ const saveInHistorique = async (data) => {
     catch (e) {
         console.log('Error : ', e);
     }
-}
+  }
 
   const saveInFavorite = async (data) => {
     try{
